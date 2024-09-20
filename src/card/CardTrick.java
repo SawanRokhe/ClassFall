@@ -20,15 +20,15 @@ public class CardTrick {
         Card[] magicHand = new Card[7];  
         Random random = new Random();
 
-        
-        for (int i = 0; i < magicHand.length; i++) {
+    for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             c.setValue(random.nextInt(13) + 1);  // Card values between 1-13
             c.setSuit(Card.SUITS[random.nextInt(4)]);  // Randomly select suit
             magicHand[i] = c;
             System.out.println("Card " + (i+1) + ": " + c.getSuit() + " " + c.getValue());  
         }
-
+ 
+        
         
         Card luckyCard = new Card();
         luckyCard.setValue(7);  // Lucky card value
